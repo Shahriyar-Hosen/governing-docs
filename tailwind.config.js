@@ -13,6 +13,13 @@ export default {
         "gradient-secondary":
           "linear-gradient(161.45deg, #00D2FF -5.54%, #9AEDFF 59.11%)",
       },
+      fontFamily: {
+        "space-grotesk": ['"Space Grotesk"', "sans-serif"],
+        "nunito-sans": ['"Nunito Sans"', "sans-serif"],
+      },
+      screens: {
+        1440: "1440px",
+      },
     },
   },
   plugins: [],
