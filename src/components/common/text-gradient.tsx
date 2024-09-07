@@ -1,5 +1,5 @@
+import { cn } from "@/lib/utils";
 import { FC } from "react";
-import { cn } from "../../lib/utils";
 
 export const GradientText: FC<IClassChildren> = ({ children, className }) => (
   <span

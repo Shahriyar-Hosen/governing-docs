@@ -1,4 +1,4 @@
-import { GradientText } from "./components/common/text-gradient";
+import { GradientText } from "~/common";
 
 function App() {
   return (
