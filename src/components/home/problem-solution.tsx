@@ -3,7 +3,7 @@ import { Container, SectionTitle } from "~/common";
 import { Arrow } from "~/icon";
 
 const Header = () => (
-  <div className="flex justify-between items-center">
+  <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-5">
     <SectionTitle gradient="Solution" className="text-start">
       Problem &
     </SectionTitle>

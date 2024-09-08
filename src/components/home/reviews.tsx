@@ -37,11 +37,11 @@ export const Reviews = () => {
   const activeReview = reviews[active];
 
   return (
-    <section className="w-full bg-[#F6F6F6] py-20 my-[150px]">
+    <section className="w-full bg-[#F6F6F6] py-10 lg:py-20 my-[50px] sm:my-[80px] lg:my-[100px] xl:my-[150px]">
       <Container>
         <SectionTitle gradient="Reviews From">Our Client</SectionTitle>
 
-        <div className="pt-10 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 lg:gap-20 xl:gap-[93px]">
+        <div className="pt-10 flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-20 xl:gap-[93px]">
           {/* Reviews List */}
           <div className="flex gap-5 w-full">
             <div className="bg-[#E2DED8] w-[5px] rounded-[20px] flex flex-col justify-between">
@@ -76,7 +76,7 @@ export const Reviews = () => {
 
           {/* Review Details */}
           <div className="space-y-3.5 sm:space-y-5 lg:space-y-[30px] w-full">
-            <h3 className="font-bold text-[30px]">
+            <h3 className="font-bold text-xl lg:text-[30px]">
               {activeReview.review.title}
             </h3>
             <div className="flex justify-start items-center gap-[5px]">
