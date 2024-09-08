@@ -8,7 +8,7 @@ interface IProps extends IClassChildren {
 export const SectionTitle: FC<IProps> = ({ children, gradient, className }) => (
   <h1
     className={cn(
-      "text-[46px] leading-[58.7px] font-bold font-space-grotesk text-center",
+      "text-[30px] md:text-[35px] lg:text-[46px] leading-[35px] md:leading-[45px] lg:leading-[58.7px] font-bold font-space-grotesk text-center",
       className
     )}
   >
