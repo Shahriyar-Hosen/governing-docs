@@ -10,7 +10,7 @@ interface IFaqCard {
 }
 const FaqCard: FC<IFaqCard> = ({ a, q, isActive, onClick }) => {
   return (
-    <div className="shadow-faq w-full rounded-[20px] px-[30px] py-5">
+    <div className="shadow-faq w-full rounded-[20px] px-[30px] py-5 bg-white">
       <button
         onClick={onClick}
         className="w-full inline-flex justify-between items-center"
@@ -42,19 +42,26 @@ export const Faq = () => {
   };
 
   return (
-    <section className="w-full max-w-[982px] mx-auto mt-[150px]">
-      <SectionTitle gradient="Asked Questions">Frequently </SectionTitle>
+    <section className="w-full mt-[150px] relative ">
+      <div className="w-full max-w-[982px] mx-auto">
+        <SectionTitle gradient="Asked Questions">Frequently </SectionTitle>
 
-      <div className="pt-10 space-y-5">
-        {faqs.map((faq, i) => (
-          <FaqCard
-            key={i}
-            isActive={active === i}
-            onClick={() => handleChange(i)}
-            {...faq}
-          />
-        ))}
+        <div className="pt-10 space-y-5 relative z-10">
+          {faqs.map((faq, i) => (
+            <FaqCard
+              key={i}
+              isActive={active === i}
+              onClick={() => handleChange(i)}
+              {...faq}
+            />
+          ))}
+        </div>
       </div>
+      <img
+        src="/faq-bg-line.svg"
+        alt="Faq Bg Line"
+        className="absolute z-0 -top-[115px] -left-[540px] 2xl:-left-[23.8%] h-[590px] !w-[1713px]"
+      />
     </section>
   );
 };

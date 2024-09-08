@@ -3,7 +3,7 @@ import { Footer, Navbar } from "~/shared";
 
 const App = () => {
   return (
-    <main className="font-nunito-sans bg-hero-bg min-h-svh bg-no-repeat bg-top">
+    <main className="font-nunito-sans bg-hero-bg min-h-svh bg-no-repeat bg-top ">
       <Navbar />
       <Hero />
       <ProblemSolution />
