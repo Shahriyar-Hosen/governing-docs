@@ -24,7 +24,6 @@ export default {
       boxShadow: {
         "arrow-btn": "0px 4px 15px 0px #0000001A",
         card: "0px 10px 30px 0px #02B6DC26",
-        avatar: "0px 0px 10px 0px #00000024",
       },
     },
   },
