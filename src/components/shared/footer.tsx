@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className="pt-5 lg:pt-24">
       <Container>
-        <div className="flex flex-col sm:flex-wrap justify-center sm:justify-between items-center gap-2.5 px-[30px] py-5 bg-white rounded-full">
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2.5 px-[30px] py-5 bg-white rounded-full">
           <h1 className="font-space-grotesk text-2xl lg:text-3xl xl:text-4xl font-bold">
             AI GoverningDocs
           </h1>
