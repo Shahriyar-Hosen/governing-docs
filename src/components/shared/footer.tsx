@@ -20,7 +20,7 @@ export const Footer = () => {
 
           <div className="flex justify-center items-center gap-2.5">
             {socialIcon.map(({ img, url }) => (
-              <a href={url} target="_blank">
+              <a href={url} key={img} target="_blank">
                 <img
                   src={img}
                   alt="social media icon"
