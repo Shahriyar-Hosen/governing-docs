@@ -1,3 +1,4 @@
+import { nevItems } from "@/lib/db";
 import { Button, Container } from "~/common";
 
 export const Navbar = () => {
@@ -23,26 +24,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
-const nevItems = [
-  {
-    label: "Problem & Solution",
-    href: "/",
-  },
-  {
-    label: "Industries We Serve",
-    href: "/",
-  },
-  {
-    label: "How It Works",
-    href: "/",
-  },
-  {
-    label: "Testimonials",
-    href: "/",
-  },
-  {
-    label: "FAQs",
-    href: "/",
-  },
-];

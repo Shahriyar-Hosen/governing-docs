@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-border-top {
+  border-image-source: linear-gradient(180deg, #00d2ff 0%, #059dbe 100%);
+  border-image-slice: 1;
+}
