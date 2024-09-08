@@ -39,9 +39,7 @@ export const Reviews = () => {
   return (
     <section className="w-full bg-[#F6F6F6] py-20 my-[150px]">
       <Container>
-        <SectionTitle gradient="Reviews From" className="text-center">
-          Our Client
-        </SectionTitle>
+        <SectionTitle gradient="Reviews From">Our Client</SectionTitle>
 
         <div className="pt-10 flex justify-center items-center gap-[93px]">
           {/* Reviews List */}

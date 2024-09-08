@@ -1,3 +1,4 @@
+export * from "./faq";
 export * from "./hero";
 export * from "./partners";
 export * from "./problem-solution";

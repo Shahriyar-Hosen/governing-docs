@@ -4,7 +4,9 @@ import { Arrow } from "~/icon";
 
 const Header = () => (
   <div className="flex justify-between items-center">
-    <SectionTitle gradient="Solution">Problem &</SectionTitle>
+    <SectionTitle gradient="Solution" className="text-start">
+      Problem &
+    </SectionTitle>
 
     <div className="flex justify-center items-center gap-[15px]">
       <button className="bg-white size-10 rounded-full text-primary flex justify-center items-center shadow-arrow-btn">
