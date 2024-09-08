@@ -44,6 +44,7 @@ export const Reviews = () => {
         </h1>
 
         <div className="pt-10 flex justify-center items-center gap-[93px]">
+          {/* Reviews List */}
           <div className="flex gap-5">
             <div className="bg-[#E2DED8] w-[5px] rounded-[20px] flex flex-col justify-between">
               <div className="flex flex-col justify-between gap-[15px]">
@@ -72,6 +73,7 @@ export const Reviews = () => {
             </div>
           </div>
 
+          {/* Review Details */}
           <div className="space-y-[30px] w-full">
             <h3 className="font-bold text-[30px]">
               {activeReview.review.title}
