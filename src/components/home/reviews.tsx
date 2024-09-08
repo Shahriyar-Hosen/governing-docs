@@ -97,10 +97,9 @@ const reviews = [
     image: "david.png",
     type: "Happy Client",
     review: {
-      stars: 5,
-      title: "It Was An Amazing Experience!",
-      details:
-        "The AI features saved us countless hours and ensured our compliance was spot on.",
+      stars: 4,
+      title: "Highly Recommend!",
+      details: "The service was user-friendly and met all my expectations.",
     },
   },
   {
@@ -108,9 +107,10 @@ const reviews = [
     image: "john-smith.png",
     type: "Happy Client",
     review: {
-      stars: 4,
-      title: "Highly Recommend!",
-      details: "The service was user-friendly and met all my expectations.",
+      stars: 5,
+      title: "It Was An Amazing Experience!",
+      details:
+        "The AI features saved us countless hours and ensured our compliance was spot on.",
     },
   },
   {
