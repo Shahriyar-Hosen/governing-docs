@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { FC, useState } from "react";
-import { Container, GradientText } from "~/common";
+import { Container, SectionTitle } from "~/common";
 import { Star } from "~/icon";
 
 export interface IReviewCard {
@@ -39,9 +39,9 @@ export const Reviews = () => {
   return (
     <section className="w-full bg-[#F6F6F6] py-20 my-[150px]">
       <Container>
-        <h1 className="font-space-grotesk font-bold text-[48px] leading-[60px] text-center">
-          Reviews From <GradientText>Our Client</GradientText>
-        </h1>
+        <SectionTitle gradient="Reviews From" className="text-center">
+          Our Client
+        </SectionTitle>
 
         <div className="pt-10 flex justify-center items-center gap-[93px]">
           {/* Reviews List */}

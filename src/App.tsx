@@ -1,4 +1,4 @@
-import { Hero, ProblemSolution, Reviews } from "~/home";
+import { Hero, ProblemSolution, Reviews, Partners } from "~/home";
 import { Footer, Navbar } from "~/shared";
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
       <Hero />
       <ProblemSolution />
       <Reviews />
+      <Partners />
       <Footer />
     </main>
   );

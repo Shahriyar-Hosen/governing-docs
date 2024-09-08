@@ -1,12 +1,11 @@
 import { FC } from "react";
-import { Container, GradientText } from "~/common";
+import { Container, SectionTitle } from "~/common";
 import { Arrow } from "~/icon";
 
 const Header = () => (
   <div className="flex justify-between items-center">
-    <h1 className="text-[46px] leading-[58.7px] font-bold font-space-grotesk">
-      Problem & <GradientText>Solution</GradientText>
-    </h1>
+    <SectionTitle gradient="Solution">Problem &</SectionTitle>
+
     <div className="flex justify-center items-center gap-[15px]">
       <button className="bg-white size-10 rounded-full text-primary flex justify-center items-center shadow-arrow-btn">
         <Arrow />
