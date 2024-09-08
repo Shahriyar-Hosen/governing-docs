@@ -18,7 +18,7 @@ const ReviewCard: FC<IReviewCard> = (props) => {
     <div
       onClick={onClick}
       className={cn(
-        "flex justify-start items-center border border-primary rounded-[20px] py-[1px] px-5 gap-[13px] w-[491px]",
+        "flex justify-start items-center border border-primary rounded-[20px] py-[1px] px-5 gap-[13px] w-full md:w-[300px] lg:w-[400px] xl:w-[491px]",
         active && "bg-gradient-primary"
       )}
     >
@@ -41,9 +41,9 @@ export const Reviews = () => {
       <Container>
         <SectionTitle gradient="Reviews From">Our Client</SectionTitle>
 
-        <div className="pt-10 flex justify-center items-center gap-[93px]">
+        <div className="pt-10 flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 lg:gap-20 xl:gap-[93px]">
           {/* Reviews List */}
-          <div className="flex gap-5">
+          <div className="flex gap-5 w-full">
             <div className="bg-[#E2DED8] w-[5px] rounded-[20px] flex flex-col justify-between">
               <div className="flex flex-col justify-between gap-[15px]">
                 {Array.from(Array(3).keys()).map((el) => (
@@ -60,7 +60,10 @@ export const Reviews = () => {
 
             <div className="space-y-[15px] flex-grow">
               {reviews.map((review, i) => (
-                <div key={i} className="flex flex-col justify-between h-fit">
+                <div
+                  key={i}
+                  className="flex flex-col justify-between h-fit w-full"
+                >
                   <ReviewCard
                     active={active === i}
                     onClick={() => setActive(i)}
@@ -72,7 +75,7 @@ export const Reviews = () => {
           </div>
 
           {/* Review Details */}
-          <div className="space-y-[30px] w-full">
+          <div className="space-y-3.5 sm:space-y-5 lg:space-y-[30px] w-full">
             <h3 className="font-bold text-[30px]">
               {activeReview.review.title}
             </h3>
