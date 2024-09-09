@@ -4,8 +4,8 @@
 2. Install and setup TailwindCss
 3. Create a Color scheme and font family in `tailwind.config` file
 4. Add `cn` function.
-   4.1: fn path: **src/lib/utils/index.ts**
-   4.2: reference: [**LWS**](https://youtu.be/y7DrXkGj7AU)
+   - fn path: **src/lib/utils/index.ts**
+   - reference: [**LWS**](https://youtu.be/y7DrXkGj7AU)
 5. Create all common components. like:- container, button, text-gradient and section title.
 6. Create Shared Components. navbar and footer.
    **Note**: _add custom css in `index.css` file_
