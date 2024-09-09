@@ -4,8 +4,8 @@
 2. Install and setup TailwindCss
 3. Create a Color scheme and font family in `tailwind.config` file
 4. Add `cn` function.
-   4.1: fn path: **src/lib/utils/index.ts**
-   4.2: reference: [**LWS**](https://youtu.be/y7DrXkGj7AU)
+   - fn path: **src/lib/utils/index.ts**
+   - reference: [**LWS**](https://youtu.be/y7DrXkGj7AU)
 5. Create all common components. like:- container, button, text-gradient and section title.
 6. Create Shared Components. navbar and footer.
    **Note**: _add custom css in `index.css` file_
@@ -24,10 +24,10 @@
    ```
 
 7. Create a home page all components
-   7.0: Setup page layout in `App.tsx` and crate `icon.tsx`.
-   7.1: Create `Hero` Section. add `hero-bg` _tailwind.config_
-   7.2: ProblemSolution
-   7.3: Reviews
-   7.4: Partners
-   7.5: Faq
-   7.6: Note
+  - Setup page layout in `App.tsx` and crate `icon.tsx`.
+  - Create `Hero` Section. add `hero-bg` _tailwind.config_
+  - ProblemSolution
+  - Reviews
+  - Partners
+  - Faq
+  - Note
