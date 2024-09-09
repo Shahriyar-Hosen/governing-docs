@@ -24,10 +24,10 @@
    ```
 
 7. Create a home page all components
-   0 - Setup page layout in `App.tsx` and crate `icon.tsx`.
-   1 - Create `Hero` Section. add `hero-bg` _tailwind.config_
-   2 - ProblemSolution
-   3 - Reviews
-   4 - Partners
-   5 - Faq
-   6 - Note
+   - Setup page layout in `App.tsx` and crate `icon.tsx`.
+   - Create `Hero` Section. add `hero-bg` _tailwind.config_
+   - ProblemSolution
+   - Reviews
+   - Partners
+   - Faq
+   - Note
