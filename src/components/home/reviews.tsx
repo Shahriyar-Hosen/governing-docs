@@ -75,8 +75,8 @@ export const Reviews = () => {
           </div>
 
           {/* Review Details */}
-          <div className="space-y-3.5 sm:space-y-5 lg:space-y-[30px] w-full">
-            <h3 className="font-bold text-xl lg:text-[30px]">
+          <div className="space-y-3.5 sm:space-y-5 lg:space-y-[30px] w-full pl-10 md:pl-0">
+            <h3 className="font-bold text-lg sm:text-xl lg:text-[30px]">
               {activeReview.review.title}
             </h3>
             <div className="flex justify-start items-center gap-[5px]">
@@ -84,7 +84,7 @@ export const Reviews = () => {
                 <Star key={el} />
               ))}
             </div>
-            <p className="font-nunito-sans text-accent max-w-[500px]">
+            <p className="font-nunito-sans text-sm sm:text-base text-accent max-w-[500px]">
               {activeReview.review.details}
             </p>
           </div>
