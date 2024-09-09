@@ -42,7 +42,7 @@ export const Reviews = () => {
         <SectionTitle gradient="Reviews From">Our Client</SectionTitle>
 
         <div className="pt-10 flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-20 xl:gap-[93px]">
-          {/* Reviews List */}
+          {/* Reviews lime */}
           <div className="flex gap-5 w-full">
             <div className="bg-[#E2DED8] w-[5px] rounded-[20px] flex flex-col justify-between">
               <div className="flex flex-col justify-between gap-[15px]">
@@ -58,6 +58,7 @@ export const Reviews = () => {
               </div>
             </div>
 
+            {/* Review List */}
             <div className="space-y-[15px] flex-grow">
               {reviews.map((review, i) => (
                 <div

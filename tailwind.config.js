@@ -18,9 +18,6 @@ export default {
         "space-grotesk": ['"Space Grotesk"', "sans-serif"],
         "nunito-sans": ['"Nunito Sans"', "sans-serif"],
       },
-      screens: {
-        1440: "1440px",
-      },
       boxShadow: {
         "arrow-btn": "0px 4px 15px 0px #0000001A",
         card: "0px 10px 30px 0px #02B6DC26",
