@@ -44,7 +44,7 @@ export const Faq = () => {
   };
 
   return (
-    <section className="w-full pt-[50px] sm:pt-[80px] lg:pt-[100px] xl:pt-[150px] relative ">
+    <section className="w-full mt-[50px] sm:mt-[80px] lg:mt-[100px] xl:mt-[150px] relative">
       <div className="w-full max-w-[982px] mx-auto px-2.5">
         <SectionTitle gradient="Asked Questions">Frequently </SectionTitle>
 

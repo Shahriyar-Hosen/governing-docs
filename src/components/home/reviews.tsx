@@ -15,10 +15,10 @@ const ReviewCard: FC<IReviewCard> = (props) => {
   const { onClick, active, image, name, type } = props || {};
 
   return (
-    <div
+    <button
       onClick={onClick}
       className={cn(
-        "flex justify-start items-center border border-primary rounded-[20px] py-[1px] px-5 gap-[13px] w-full md:w-[300px] lg:w-[400px] xl:w-[491px]",
+        "inline-flex justify-start items-center border border-primary rounded-[20px] py-[1px] px-5 gap-[13px] w-full md:w-[300px] lg:w-[400px] xl:w-[491px]",
         active && "bg-gradient-primary"
       )}
     >
@@ -27,7 +27,7 @@ const ReviewCard: FC<IReviewCard> = (props) => {
         <h4>{name}</h4>
         <p>{type}</p>
       </div>
-    </div>
+    </button>
   );
 };
 
