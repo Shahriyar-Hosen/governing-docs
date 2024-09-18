@@ -1,4 +1,4 @@
-import { Container, SectionTitle } from "~/common";
+import { Container, SectionTitle } from "../common";
 
 export const Partners = () => {
   return (

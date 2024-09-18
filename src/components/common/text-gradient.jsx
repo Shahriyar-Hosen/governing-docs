@@ -1,7 +1,6 @@
-import { cn } from "@/lib/utils";
-import { FC } from "react";
+import { cn } from "../../lib/utils";
 
-export const GradientText: FC<IClassChildren> = ({ children, className }) => (
+export const GradientText = ({ children, className }) => (
   <span
     className={cn(
       "bg-gradient-to-b from-[#00D2FF] to-[#059DBE] bg-clip-text text-transparent",

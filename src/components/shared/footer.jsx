@@ -1,4 +1,4 @@
-import { nevItems } from "@/lib/db";
+import { nevItems } from "../../lib/db";
 import { Container } from "../common";
 
 export const Footer = () => {

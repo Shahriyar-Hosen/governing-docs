@@ -1,4 +1,4 @@
-import { Button, Container } from "~/common";
+import { Button, Container } from "../common";
 
 export const Hero = () => {
   return (

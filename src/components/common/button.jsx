@@ -1,7 +1,6 @@
-import { cn } from "@/lib/utils";
-import { FC } from "react";
+import { cn } from "../../lib/utils";
 
-export const Button: FC<IClassChildren> = ({ children, className }) => {
+export const Button = ({ children, className }) => {
   return (
     <button
       className={cn(

@@ -1,10 +1,4 @@
-import { FC, SVGProps } from "react";
-
-interface IconSvgProps extends SVGProps<SVGSVGElement>, IClassName {
-  size?: number;
-}
-
-export const Arrow: FC<IconSvgProps> = (props) => (
+export const Arrow = (props) => (
   <svg
     width="11"
     height="18"
@@ -22,7 +16,7 @@ export const Arrow: FC<IconSvgProps> = (props) => (
   </svg>
 );
 
-export const Star: FC<IconSvgProps> = (props) => (
+export const Star = (props) => (
   <svg
     width="22"
     height="22"

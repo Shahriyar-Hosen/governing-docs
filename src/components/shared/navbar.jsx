@@ -1,6 +1,6 @@
-import { nevItems } from "@/lib/db";
 import { useEffect, useState } from "react";
-import { Button, Container } from "~/common";
+import { nevItems } from "../../lib/db";
+import { Button, Container } from "../common";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

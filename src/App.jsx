@@ -1,5 +1,12 @@
-import { Hero, ProblemSolution, Reviews, Partners, Faq, Note } from "~/home";
-import { Footer, Navbar } from "~/shared";
+import {
+  Faq,
+  Hero,
+  Note,
+  Partners,
+  ProblemSolution,
+  Reviews,
+} from "./components/home";
+import { Footer, Navbar } from "./components/shared";
 
 const App = () => {
   return (

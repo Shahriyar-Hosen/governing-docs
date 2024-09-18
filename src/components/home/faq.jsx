@@ -1,14 +1,8 @@
-import { FC, useState } from "react";
-import { SectionTitle } from "~/common";
-import { Arrow } from "~/icon";
+import { useState } from "react";
+import { SectionTitle } from "../common";
+import { Arrow } from "../icon";
 
-interface IFaqCard {
-  q: string;
-  a: string;
-  isActive?: boolean;
-  onClick: () => void;
-}
-const FaqCard: FC<IFaqCard> = ({ a, q, isActive, onClick }) => {
+const FaqCard = ({ a, q, isActive, onClick }) => {
   return (
     <div className="shadow-faq w-full rounded-[20px] px-5 md:px-[30px] py-5 bg-white">
       <button
@@ -35,7 +29,7 @@ const FaqCard: FC<IFaqCard> = ({ a, q, isActive, onClick }) => {
 export const Faq = () => {
   const [active, setActive] = useState(1);
 
-  const handleChange = (index: number) => {
+  const handleChange = (index) => {
     if (active === index) {
       setActive(-1);
     } else {

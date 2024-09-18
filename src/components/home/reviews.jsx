@@ -1,17 +1,9 @@
-import { cn } from "@/lib/utils";
-import { FC, useState } from "react";
-import { Container, SectionTitle } from "~/common";
-import { Star } from "~/icon";
+import { useState } from "react";
+import { cn } from "../../lib/utils";
+import { Container, SectionTitle } from "../common";
+import { Star } from "../icon";
 
-export interface IReviewCard {
-  onClick?: () => void;
-  active: boolean;
-  image: string;
-  name: string;
-  type: string;
-}
-
-const ReviewCard: FC<IReviewCard> = (props) => {
+const ReviewCard = (props) => {
   const { onClick, active, image, name, type } = props || {};
 
   return (

@@ -1,6 +1,5 @@
-import { FC } from "react";
-import { Container, SectionTitle } from "~/common";
-import { Arrow } from "~/icon";
+import { Container, SectionTitle } from "../common";
+import { Arrow } from "../icon";
 
 const Header = () => (
   <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-5">
@@ -19,14 +18,7 @@ const Header = () => (
   </div>
 );
 
-interface ICard {
-  image: string;
-  title: string;
-  des1: string;
-  des2?: string;
-}
-
-const Card: FC<ICard> = ({ image, title, des1, des2 }) => (
+const Card = ({ image, title, des1, des2 }) => (
   <div className="transition-colors duration-200 w-[272px] h-[349px] rounded-[20px] p-5 space-y-5 shadow-card hover:bg-primary group">
     <div className="bg-primary size-[58px] rounded-full flex justify-center items-center">
       <img src={image} alt={title} />
@@ -57,7 +49,7 @@ export const ProblemSolution = () => {
   );
 };
 
-const cards: ICard[] = [
+const cards = [
   {
     image: "/problem.svg",
     title: "Problem",
