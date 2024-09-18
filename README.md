@@ -11,7 +11,7 @@
    **Note**: _add custom css in `index.css` file_
 
    ```css
-   /* Prevent body scrolling when the mobile menu is open */
+   /* Prevent body scrolling when the mobile menu is open (Navbar Component) */
    .no-scroll {
      overflow: hidden;
    }
