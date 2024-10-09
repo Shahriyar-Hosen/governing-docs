@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Arrow } from "../icon";
 
 export const FaqCard = ({ a, q, isActive, onClick }) => {
