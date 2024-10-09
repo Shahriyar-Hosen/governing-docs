@@ -1,40 +1,13 @@
 import { useState } from "react";
+import { faqs } from "../../lib/db";
 import { SectionTitle } from "../common";
-import { Arrow } from "../icon";
-
-const FaqCard = ({ a, q, isActive, onClick }) => {
-  return (
-    <div className="shadow-faq w-full rounded-[20px] px-5 md:px-[30px] py-5 bg-white">
-      <button
-        onClick={onClick}
-        className="w-full inline-flex justify-between items-center gap-5"
-      >
-        <h1 className="font-bold text-start text-lg lg:text-[26px] lg:leading-[36.4px] text-accent">
-          {q}
-        </h1>
-
-        <div className="text-primary">
-          <Arrow className={isActive ? "-rotate-90" : "rotate-90"} />
-        </div>
-      </button>
-      {isActive && (
-        <p className="tracking-[2%] text-sm sm:text-base text-accent max-w-[807px] pt-5">
-          {a}
-        </p>
-      )}
-    </div>
-  );
-};
+import { FaqCard } from "./FaqCard";
 
 export const Faq = () => {
   const [active, setActive] = useState(1);
 
   const handleChange = (index) => {
-    if (active === index) {
-      setActive(-1);
-    } else {
-      setActive(index);
-    }
+    active === index ? setActive(-1) : setActive(index);
   };
 
   return (
@@ -61,18 +34,3 @@ export const Faq = () => {
     </section>
   );
 };
-
-const faqs = [
-  {
-    q: "Is my data secure?",
-    a: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
-  },
-  {
-    q: "What types of documents can Ai GoverningDocs generate?",
-    a: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
-  },
-  {
-    q: "Can I customize the documents?",
-    a: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
-  },
-];

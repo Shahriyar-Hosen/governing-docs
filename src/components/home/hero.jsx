@@ -15,6 +15,7 @@ export const Hero = () => {
 
           <Button>Get Started Today</Button>
         </div>
+
         <div>
           <img
             src="/hero-side.svg"

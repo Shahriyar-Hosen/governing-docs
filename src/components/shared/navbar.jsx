@@ -1,31 +1,22 @@
 import { useEffect, useState } from "react";
 import { nevItems } from "../../lib/db";
 import { Button, Container } from "../common";
+import { Logo } from "./Logo";
+import { MobileMenu } from "./MobileMenu";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
     // Add or remove the 'no-scroll' class to the body to prevent background scrolling
     const bodyClass = document.body.classList;
 
-    if (isMenuOpen) {
-      bodyClass.add("no-scroll");
-    } else {
-      bodyClass.remove("no-scroll");
-    }
+    isMenuOpen ? bodyClass.add("no-scroll") : bodyClass.remove("no-scroll");
 
     // Cleanup when the component is unmounted or menu is closed
     return () => bodyClass.remove("no-scroll");
   }, [isMenuOpen]);
-
-  const Logo = () => (
-    <h1 className="font-space-grotesk text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
-      GoverningDocs
-    </h1>
-  );
 
   return (
     <nav className="py-5 sm:py-8 xl:py-11 relative">
@@ -52,9 +43,9 @@ export const Navbar = () => {
               aria-label="Toggle Menu"
             >
               <div className="space-y-1">
-                <span className="block w-6 h-0.5 bg-black"></span>
-                <span className="block w-6 h-0.5 bg-black"></span>
-                <span className="block w-6 h-0.5 bg-black"></span>
+                <span className="block w-6 h-0.5 bg-black" />
+                <span className="block w-6 h-0.5 bg-black" />
+                <span className="block w-6 h-0.5 bg-black" />
               </div>
             </button>
 
@@ -63,35 +54,7 @@ export const Navbar = () => {
         </div>
 
         {/* Scrollable Mobile Menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden absolute top-0 left-0 w-full h-screen bg-white z-50 overflow-y-auto p-6">
-            <div className="flex justify-between items-center pb-6">
-              <Logo />
-
-              {/* Close Button */}
-              <button
-                className="self-end text-black text-2xl"
-                onClick={toggleMenu}
-                aria-label="Close Menu"
-              >
-                &times;
-              </button>
-            </div>
-
-            {/* Menu Items */}
-            <div className="space-y-4">
-              {nevItems.map(({ href, label }, i) => (
-                <a
-                  href={href}
-                  key={i}
-                  className="block text-lg text-accent hover:text-primary transition-colors duration-150"
-                >
-                  {label}
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
+        {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
       </Container>
     </nav>
   );

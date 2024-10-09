@@ -1,27 +1,9 @@
 import { useState } from "react";
+import { reviews } from "../../lib/db";
 import { cn } from "../../lib/utils";
 import { Container, SectionTitle } from "../common";
 import { Star } from "../icon";
-
-const ReviewCard = (props) => {
-  const { onClick, active, image, name, type } = props || {};
-
-  return (
-    <button
-      onClick={onClick}
-      className={cn(
-        "inline-flex justify-start items-center border border-primary rounded-[20px] py-[1px] px-5 gap-[13px] w-full md:w-[300px] lg:w-[400px] xl:w-[491px]",
-        active && "bg-gradient-primary"
-      )}
-    >
-      <img src={image} alt="David" className="rounded-full" />
-      <div className={cn("font-semibold text-accent", active && "text-white")}>
-        <h4>{name}</h4>
-        <p>{type}</p>
-      </div>
-    </button>
-  );
-};
+import { ReviewCard } from "./ReviewCard";
 
 export const Reviews = () => {
   const [active, setActive] = useState(1);
@@ -86,37 +68,3 @@ export const Reviews = () => {
     </section>
   );
 };
-
-const reviews = [
-  {
-    name: "David",
-    image: "david.png",
-    type: "Happy Client",
-    review: {
-      stars: 4,
-      title: "Highly Recommend!",
-      details: "The service was user-friendly and met all my expectations.",
-    },
-  },
-  {
-    name: "John Smith",
-    image: "john-smith.png",
-    type: "Happy Client",
-    review: {
-      stars: 5,
-      title: "It Was An Amazing Experience!",
-      details:
-        "The AI features saved us countless hours and ensured our compliance was spot on.",
-    },
-  },
-  {
-    name: "Ronald Richards",
-    image: "ronald-richards.png",
-    type: "Happy Client",
-    review: {
-      stars: 5,
-      title: "Outstanding Support!",
-      details: "The customer support team was quick to resolve my issues.",
-    },
-  },
-];

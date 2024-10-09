@@ -1,4 +1,4 @@
-import { nevItems } from "../../lib/db";
+import { nevItems, socialIcon } from "../../lib/db";
 import { Container } from "../common";
 
 export const Footer = () => {
@@ -42,10 +42,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
-const socialIcon = [
-  { img: "/fb.png", url: "https://www.facebook.com" },
-  { img: "/instagram.png", url: "https://www.instagram.com" },
-  { img: "/in.png", url: "https://bd.linkedin.com" },
-  { img: "/x.png", url: "https://x.com" },
-];
